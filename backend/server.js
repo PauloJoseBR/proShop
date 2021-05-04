@@ -1,4 +1,5 @@
 const express = require('express')
+const products = require('./data/products')
 
 const app = express()
 
@@ -9,7 +10,7 @@ app.get('/', (req, res) => {
 
 
 app.get('/api/products', (req, res) => {
-    res.send('API is running...')
+    res.json(products)
 })
 
 app.listen(5000, console.log('Server running on port 5000'))
