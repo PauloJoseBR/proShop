@@ -1,0 +1,19 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "MERN shopping cart app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PauloJoseBR/proShop.git"
+  },
+  "author": "Paulo José Ribeiro Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PauloJoseBR/proShop/issues"
+  },
+  "homepage": "https://github.com/PauloJoseBR/proShop#readme"
+}
