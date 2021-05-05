@@ -21,11 +21,6 @@ const productSchema = mongoose.Schema({
         type: String, 
         required: true,
     },
-    email: {
-        type: String, 
-        required: true,
-        unique: true,
-    },
     brand: {
         type: String, 
         required: true,
