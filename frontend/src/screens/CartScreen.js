@@ -13,7 +13,7 @@ const CartScreen = ({ match, location, history }) => {
 
     const dispatch = useDispatch()
 
-    const cart = useSelector(state => state.cart)
+    const cart = useSelector((state) => state.cart)
     const { cartItems } = cart
 
     useEffect(() => {
@@ -24,9 +24,21 @@ const CartScreen = ({ match, location, history }) => {
 
 
     return (
-        <div>
-            Cart
-        </div>
+        <Row>
+            <Col md={8}>
+                <h1>Shopping cart</h1>
+                {cartItems.length === 0 ? <Message>Your cart is empty <Link to='/'>Go Back</Link> </Message>
+                 : (
+                     <ListGroup variant='flush'></ListGroup>
+                 )}
+            </Col>
+            <Col md={2}>
+                
+            </Col>
+            <Col md={2}>
+                
+            </Col>
+        </Row>
     )
 }
 
