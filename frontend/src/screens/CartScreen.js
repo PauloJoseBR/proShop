@@ -61,6 +61,12 @@ const CartScreen = ({ match, location, history }) => {
                      </ListGroup>
                  )}
             </Col>
+            <Col md={4}>
+                <ListGroup variant='flush'>
+                    <h2>Subtotal ({cartItems.reduce((acc, item) => acc + item.qty, 0)}) 
+                    items</h2>
+                </ListGroup>
+            </Col>
         </Row>
     )
 }
